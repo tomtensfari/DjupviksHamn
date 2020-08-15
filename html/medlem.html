@@ -32,8 +32,8 @@
       
       <!--Kom ihåg att sätta in main-->
       <main>
-       <section>
-          <h2>Djupviks medlemsinformation</h2>
+       <section class="flexcontainer">
+          <h2 class="full_width_header">Djupviks medlemsinformation</h2>
         <article id="members_article">
             <h2>Medlemsregister:</h2>
             <table id="members">
@@ -85,6 +85,7 @@
         </article>
 
         <picture id="fiskare">
+          <source srcset="/images/fiskare_xtra_stor.jpg" media="(min-width:1700px)"/>
           <source srcset="/images/fiskare_stor.jpg" media="(min-width:1200px)"/><!--Stora bilden-->
           <source srcset="/images/fiskare_mellan.jpg" media="(min-width:550px)" /><!--Mellan bilden-->
           <img src="/images/fiskare_liten.jpg" alt="Fiskare vid kajen"/><!--Lilla bilden-->

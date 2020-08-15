@@ -46,6 +46,7 @@ html {
     top: 2rem;
     right: 1rem;
     padding: 0.5rem 1rem;
+    border-radius: 30px 15px;
   }
   #navigation_header #english_link:hover {
     background-color: rgba(0, 46, 87);
@@ -116,6 +117,7 @@ table tr:nth-child(odd) {
   width: 10rem;
   background-color: #D1D0CC;
   border:groove #2F6A9D;
+  border-radius: 15px 50px;
 }
 #contact_form label{
   width: 100%;
@@ -164,6 +166,7 @@ section a:visited {
       border: none;
       font-size: 110%;
       padding: 0.5rem 1rem;
+      border-radius:15px 30px;
     }
 
     #navbar_container {
@@ -259,12 +262,14 @@ section a:visited {
         left: 10%;
         right: 10%;
         width: 70%;
+        
     }
       nav {
       display: block;
       overflow: hidden;
       background-color: #002E57;
       opacity: 0.8;
+      border-radius: 50px 15px;
     }
       nav ul {
         display: flex;
@@ -281,11 +286,18 @@ section a:visited {
         display: block;
         padding: 0.5rem 1rem;
         margin: 0.5rem auto;
+        border-radius: 30px 15px;
     }
     nav a:hover, nav a:focus {
       background-color: #D1D0CC;
       color: rgba(0, 46, 87);
       transform: scale(1.10);
+    }
+    #navigation_header #english_link{
+      font-size: 120%;
+      height:4rem;
+      padding-top:1.25rem;
+      border-radius: 50px 15px;
     }
 
     /*Kontaktformulär*/
@@ -353,8 +365,40 @@ section a:visited {
       margin:3rem 0.5rem;
       flex-grow: 1;
     }
+    /*Historia*/
+    #trabodar {
+      margin:3rem 1rem;
+    }
+    #konrad_bildtext{
+      margin:3rem 1rem;
+    }
+    #eksta_history_part4{
+      flex-grow:2;
+    }
+    #storm{
+      flex: 1 0 30%;
+    }
+    #lantern{
+      margin: 1rem 5%;
+    }
+    #havet{
+      margin-left: 30%; 
+    }
 
+    /*Medlem*/
+    #fiskare{
+      margin-top:5rem;
+    }
+
+    /*Kontakt*/
+    #contact_info{
+      flex:1 0 20%;
+    }
+    #livboj{
+      margin-left: 10%;
+    }
   }
+
   @media screen and (min-width: 1300px){
     .flexcontainer p{
       line-height: 1.5;
@@ -368,6 +412,10 @@ section a:visited {
     #timmerstuga{
       margin: 5rem 2rem;
     }
+    #members th, #members td{
+      font-size: 135%;
+    }
+
   }
 
   @media screen and (min-width: 2000px){
@@ -382,8 +430,36 @@ section a:visited {
     }
     #news {
       flex: 1 0 60%;
-
   }
+    #eksta_history_part1 {
+      flex-grow:2;
+    }
+    #eksta_history_part2 {
+      flex-grow:2;
+    }
+    #eksta_history_part3 {
+      flex-grow: 1;
+    }
+    #lantern{
+      flex-grow:2;
+      order: 1;
+    }
+    #eksta_history_part4{
+      flex-grow: 1;
+      order: 2;
+    }
+    #storm{
+      order: 3;
+    }
+    #havet{
+      order:4;
+    }
+    #members th, #members td{
+      font-size: 150%;
+    }
+    #fiskare{
+      margin-right: 10%;
+    }
 }
 
     
