@@ -75,7 +75,6 @@ html {
     max-width: 100%;
 }
 
-
 /*Alla tabeller*/
 table {
   margin-bottom: 2rem;
@@ -91,8 +90,6 @@ table tr:nth-child(even) {
 table tr:nth-child(odd) {
   background-color: #fff;
 }
-
-
 
 /*Namnförklaringstabellen*/
 #names th {
@@ -312,7 +309,79 @@ section a:visited {
     }
   }
   @media screen and (min-width: 1024px){
-    #members_article {
+   /*Alla sidor*/
+    .flexcontainer{
+      display: flex;
+      flex-flow: row;
+      flex-wrap: wrap;
+      justify-content:space-between;
+    }
+    .flexcontainer article {
+      flex: 1 0 40%;
+      margin: 1rem;
+    }
+    .full_width_header{
+      flex: 0 1 100%;
+      margin: 1rem;
+    }
+    /*Index page*/
+    #timmerstuga {
+    margin-top:5rem
+    }
+    #guest_harbor_info{
+      flex-grow: 3;
+    }
+    #smhi{
+      margin: 1rem;
+      flex-grow: 2;
+    }
+    #bathamn {
+      margin: 1rem;
+      flex-grow: 1;
+    }
+    #news {
+      flex: 1 0 40%;
+      flex-grow: 2;
+    }
+    /*Turismål*/
+    #strand, #skapp, #natur{
+      margin:3rem 1rem;
+    }
+    #natur{
+      margin:3rem 0.5rem;
+    }
+
+  }
+  @media screen and (min-width: 1300px){
+    #guest_harbor_info{
+      flex: 35%
+    }
+    #bathamn{
+      margin-top: 2rem;
+    }
+    #timmerstuga{
+      margin: 5rem 2rem;
+    }
+  }
+
+  @media screen and (min-width: 2000px){
+    .flexcontainer article {
+      flex: 2 0 30%;
+    }
+    #guest_harbor_info {
+      flex:3 0 20%
+    }
+    #smhi{
+      flex-grow: 2;
+    }
+    #news {
+      flex: 1 0 60%;
+
+  }
+}
+
+    
+    /*#members_article {
       display: inline-block;
       padding-bottom: 10rem;
     }
@@ -412,5 +481,4 @@ section a:visited {
     
     }
   }
-
-  /*Skriv mall för 2560px också*/
+*/

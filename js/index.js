@@ -4,10 +4,10 @@ let promise = fetchWeather();
 //Skapa rubriker
 const WEATHER_SECTION = document.getElementById('smhi');
 
-var sectionHeader = document.createElement('h3');
-sectionHeader.innerHTML = "Väder";
+var sectionHeader = document.createElement('h2');
+sectionHeader.innerHTML = "Djupvik hamns väder";
 
-var sectionSubHeader = document.createElement('h4');
+var sectionSubHeader = document.createElement('h3');
 sectionSubHeader.innerHTML = "Idag";
 WEATHER_SECTION.appendChild(sectionHeader);
 WEATHER_SECTION.appendChild(sectionSubHeader);
@@ -35,12 +35,12 @@ WEATHER_TABEL.appendChild(SKY_HEADER);
 
 
 //Tabell för morgondagen
-var sectionSubHeader = document.createElement('h4');
+var sectionSubHeader = document.createElement('h3');
 sectionSubHeader.innerHTML = "Imorgon";
 WEATHER_SECTION.appendChild(sectionSubHeader);
 
 const WEATHER_TABEL_TOMORROW = document.createElement('table');
-WEATHER_TABEL_TOMORROW.setAttribute('id', 'smhi_tabel_tomorrow');
+WEATHER_TABEL_TOMORROW.setAttribute('id', 'smhi_tabel');
 WEATHER_SECTION.appendChild(WEATHER_TABEL_TOMORROW);
 
 const CLOCK_HEADER_TOMORROW = document.createElement('th');
