@@ -10,6 +10,7 @@ html {
     font-size: 100%;
     background-color:#f8f8f8;
     margin: 0;
+    color: #002E57;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -145,7 +146,13 @@ input[type=reset]:hover, input[type=reset]:focus {
     #002E57
     #D1D0CC ändrad till #f8f8f8
     #00498A*/
-  
+section a {
+  text-decoration: none;
+  color: #2F6A9D;
+}
+section a:visited {
+  color: #2F6A9D;
+}
   @media screen and (min-width: 320px) and (max-width:767px) {
     header h1 {
       right: 15%;
@@ -282,6 +289,7 @@ input[type=reset]:hover, input[type=reset]:focus {
     nav a:hover, nav a:focus {
       background-color: #D1D0CC;
       color: rgba(0, 46, 87);
+      transform: scale(1.10);
     }
 
     /*Kontaktformulär*/
