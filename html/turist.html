@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Djupvik hamns turistmål</title>
+    <!-- lägg in typsnitt här -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <!--Om js används lägg in: <script src="/js/index.js" type="module"></script>-->
+  </head>
+  <body>
+      <div id="navigation_header">
+        <header>
+          <h1>Turistmål i närheten</h1>
+        </header>
+          <a href="/html/english.html" id="english_link">English</a>
+          <div id="navbar_container">
+            <button id="navBtn">Meny</button>
+            <nav>
+                  <ul>
+                    <li><a href="/index.html">Hem</a></li>
+                    <li id="active"><a href="#">Turistmål</a></li>
+                    <li><a href="historia.html">Historia</a></li>
+                    <li><a href="medlem.html">Medlemsinfo</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>  
+                  </ul>
+              </nav>
+          </div>
+        </div>
+      <!--Kom ihåg att sätta in main-->
+      <section class="tourist_destination">
+          <h2>Turistmål</h2>
+          <article id="ekstakusten">
+            <h3>Ekstakusten</h3>
+            <p>Djupviks hamn ligger i den norra delen av Ekstakustens långa kuststräcka. Söder om Djupvik hittar man flera besöksmål: Langsteitu med sitt fågelskyddsområde, Kronvalls fiskeläge där Valdemar Atterdag enligt sägnerna landsteg 1361, det fyra långa Ekstakustens naturreservat, Skansudd med Gotlands största kustartelleriskans byggd 1713 och Vavle fiskeläge med sin alltmer populära badstrand. </p>
+            <p>Hela området är otroligt vackert och inbjuder till härliga turer med bil, cykel eller till fots. Man kan ta med egen picnic eller stanna till vid de olika kiosker och restauranger som finns vid de olika stränderna.</p>
+            <p>Att se sol gå ned vid Karlsöarna är ett måste!</p>
+          
+          </article>
+
+        <picture id="strand">
+          <source srcset="/images/strand_mellan.jpg" media="(min-width:768px)" /><!--Mellan bilden-->
+          <img src="/images/strand_liten.jpg" alt="Strandbrynet med natur i bakgrunden"/><!--Lilla bilden-->
+        </picture>
+        
+        <article id="skappssattningen">
+            <h3>Skeppssättning</h3>
+            <p>En skeppssättning är en gravplats från yngre bronsåldern (1100-500 f Kr) och på Gotland kan du hitta 350 stycken skeppssättningar. Denna som finns vid Djupvik, ovanför fiskeläget, är 13 meter lång och 4 meter bred och består av 20 stycken stenar.</p>
+            <p>Skeppssättningen är alltså en gravplats för en person. Personen som dött brändes på bål och sedan krossades och tvättades den dödes ben och lades i en lerkruka. Krukan placerades sedan i en kista av stenhällar i eller intill skeppsättningen.</p>
+            <!--DET FINNS ETT PAR BILDER PÅ SKEPPSSÄTTNINGEN OCH NÅGON AV DEM BÖR FINNAS IHOP MED DENNA TEXT-->
+        
+          </article>
+
+        <picture  id="skapp">
+          <source srcset="/images/skeppssattning_mellan.jpg" media="(min-width:768px)" /><!--Mellan bilden-->
+          <img src="/images/skeppssattning_liten.jpg" alt="Gravplatsen skäppssättningen"/><!--Lilla bilden-->
+        </picture>
+        
+        <article class="destinations">
+            <h3>Badplatser</h3>
+            <p>Utefter Ekstakusten där Djupviks fiskeläge ligger finns några badstränder. En av dem hittar du här i Djupvik</p>
+            <p>Man kan cykla eller åka bil på vägen som slingrar sig ovanför stranden i skogsranden för att komma till Sandhamn där det finns camping och badstrand (norrut från Djupvik) eller så åker man söderut och kommer till Snoderviken eller Kvarnåkershamn som båda har stränder för hela familjen och kiosk och restaurang i närheten. </p>
+            <!--DET FINNS EN BILD PÅ DJUPVIKS STRAND, OM DEN ANVÄNDS SKA BILDTEXTEN VARA ”Djupviks Strand, foto Bernt Enderborg”-->
+        </article>
+        
+        <article class="destinations">
+            <h3>Restauranger</h3>
+            <p>Djupvik Hotel ligger strax ovanför fiskeläget där man kan äta mat, bo och boka för fester och konferenser. Läs mer på deras hemsida:<a href="http://djupvikhotel.com/">http://djupvikhotel.com/</a></p>
+            <p>Strax norr om Djupvik hittar man Fröjel Resort som har inomhuspool, gym och spa, samt rum och restaurang. Läs mer på deras hemsida: <a href="https://fröjel-resort.se">https://fröjel-resort.se</a></p>
+        </article>
+        
+        <article class="destinations">
+            <h3>Öarna</h3>
+            <p>Utanför Djupvik ser man Stora och Lilla Karlsö som båda är Sveriges enda fågelberg och man kan besöka båda under sommaren. Båten utgår från Klintehamn och resan till Lilla Karlsö tar 20 minuter och till Stora Karlsö 30-40 minuter.</p>
+            <p>För tider och priser och mer information om öarna gå till deras hemsidor:<a href="http://lillakarlso.org/ ">http://lillakarlso.org/</a> och <a href="http://www.storakarlso.se/">http://www.storakarlso.se/</a></p>
+        </article>
+
+        <picture id="natur">
+          <source srcset="/images/skargardsnatur_mellan.jpg" media="(min-width:650px)" /><!--Mellan bilden-->
+          <img src="/images/skargardsnatur_liten.jpg" alt="Träd i närbild med vattnet och berg i bakgrunden"/><!--Lilla bilden-->
+        </picture>
+
+      </section>
+      
+      <footer>
+        <p>Copyright 2020 | Djupvikshamn.se | info@djupvikshamn.se</p>
+      </footer>
+  </body>
+</html>

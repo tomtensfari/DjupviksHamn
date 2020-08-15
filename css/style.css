@@ -1,0 +1,408 @@
+html {
+    box-sizing: border-box;
+  }
+  * {
+    box-sizing: inherit;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    background-color:#f8f8f8;
+    margin: 0;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+  }
+  /*Bilden bakom navigationen*/
+  #navigation_header {
+    background: url(/images/banner.jpg) no-repeat center center;
+    height: 25rem;
+    text-align: center;
+    position: relative;
+  }
+  /*texten på bakgrundsbilden*/
+  header h1 {
+    font-size: 250%;
+    color: #002E57;
+    font-style: italic;
+    font-weight: 100;
+    position: absolute;
+    top: 12rem;
+    margin:0;
+    background-color: rgba(209, 208, 204, 0.8);
+    overflow-wrap: break-word;
+  }
+
+  /*Engelska länken*/
+  #navigation_header #english_link {
+    text-decoration: none;
+    background-color: rgba(0, 46, 87, 0.8);
+    color: #D1D0CC;
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    padding: 0.5rem 1rem;
+  }
+  #navigation_header #english_link:hover {
+    background-color: rgba(0, 46, 87);
+  }
+  
+  /*Nästan alla element är i en section*/
+  section {
+    margin: 5%;
+  }
+
+  /*footer*/
+  footer {
+    background-color: #002E57;
+    margin: 0;
+    height: 5rem;
+    display: block;
+    text-align: center;
+    padding: 1.5rem;
+  }
+  footer p {
+    color: #D6CCB4;
+    margin: 0.5% auto;
+    font-size: 80%;
+    font-style:normal;
+}
+/*Bilder*/
+  picture {
+    max-width: 100%;
+}
+
+
+/*Alla tabeller*/
+table {
+  margin-bottom: 2rem;
+}
+table th {
+  color: #D6CCB4;
+  background-color: #002E57;
+  font-size: 120%;
+}
+table tr:nth-child(even) {
+  background-color: #D1D0CC;
+}
+table tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+
+
+/*Namnförklaringstabellen*/
+#names th {
+  text-align: left;
+  padding-left: 1rem;
+}
+#names caption {
+  font-size: 110%;
+}
+#names td {
+  padding-left: 1rem;
+}
+
+/*Kontaktformuläret*/
+#contact_form {
+  padding-bottom: 2rem;
+}
+#contact_form legend{
+  font-size: 80%;
+  font-weight: 600;
+} 
+#contact_form fieldset {
+  width: 10rem;
+  background-color: #D1D0CC;
+  border:groove #2F6A9D;
+}
+#contact_form label{
+  width: 100%;
+  float: none;
+  text-align: left;
+  display: block;
+}
+input[type=submit] {
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+}
+input[type=submit]:hover, input[type=submit]:focus {
+  transform: scale(1.10);
+}
+input[type=reset]{
+  border-radius: 8px;
+}
+
+input[type=reset]:hover, input[type=reset]:focus {
+  transform: scale(1.10);
+}
+  /* 
+  FÄRGPALETTEN
+    #D6CCB4
+    #2F6A9D
+    #002E57
+    #D1D0CC ändrad till #f8f8f8
+    #00498A*/
+  
+  @media screen and (min-width: 320px) and (max-width:767px) {
+    header h1 {
+      right: 15%;
+      left: 15%;
+    }
+    
+    /*Navigation small screen*/
+    #navBtn{
+      background-color:  rgba(0, 46, 87, 0.8);
+      color: #D1D0CC;
+      border: none;
+      font-size: 110%;
+      padding: 0.5rem 1rem;
+    }
+
+    #navbar_container {
+      position: absolute;
+      top: 2rem;
+      left: 1rem;
+      display: inline-block;
+    }
+
+    nav {
+    position: absolute;
+    display: none;
+    background-color: #002E57;
+    opacity: 0.8;
+    z-index: 1;
+    padding:0;
+    }
+    
+    nav ul {
+      display: flex;
+      margin: 0;
+      justify-content:space-evenly;
+      flex-wrap: wrap; 
+      list-style-type: none;
+      padding:0;
+    }
+    nav a {
+      overflow: hidden;
+      text-align: left;
+      display: block;
+      text-decoration: none;
+      color: #D1D0CC;
+      background-color: rgba(0, 46, 87, 0.8);
+      padding: 0.5rem 0.25rem;
+    }
+    #navbar_container:hover nav, #navbar_container:focus-within nav {
+      display: block;   
+    }
+    #navbar_container:hover #navBtn {
+      background-color: rgba(0, 46, 87);
+    }
+    nav a:hover, nav a:focus {
+      background-color: #D1D0CC;
+      color: rgba(0, 46, 87);
+    }
+    /*Medlemstabellen*/
+    #members ,#members thead, #members tbody, #members th, #members td, #members tr  {
+      display: block;
+    }
+    #members thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+    #members td {
+      border: none;
+      position: relative;
+      padding-left: 45%;
+    }
+    #members td:before {
+      position: absolute;
+      top: 1px;
+      left: 30px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+    }
+    #members td:nth-of-type(1):before{
+      content:"Namn";
+    }
+    #members td:nth-of-type(2):before{
+      content:"Mail";
+    }
+    #members td:nth-of-type(3):before{
+      content:"Telefon";
+    }
+  }
+  
+
+  
+  @media screen and (min-width: 768px){
+    /*Navbar*/
+    #navBtn {
+      display: none;
+    }
+    header h1 {
+      right: 30%;
+      left: 30%;
+      font-size: 300%;
+    }
+
+      #navbar_container {
+        position: absolute;
+        margin:2rem 5%;
+        left: 10%;
+        right: 10%;
+        width: 70%;
+    }
+      nav {
+      display: block;
+      overflow: hidden;
+      background-color: #002E57;
+      opacity: 0.8;
+    }
+      nav ul {
+        display: flex;
+        margin: 0 auto;
+        justify-content:space-around;
+        padding: 0.5rem;
+        list-style-type: none;
+    }
+      nav a {
+        text-decoration: none;
+        background-color: #002E57;
+        font-size: 120%;
+        color: #D1D0CC;
+        display: block;
+        padding: 0.5rem 1rem;
+        margin: 0.5rem auto;
+    }
+    nav a:hover, nav a:focus {
+      background-color: #D1D0CC;
+      color: rgba(0, 46, 87);
+    }
+
+    /*Kontaktformulär*/
+
+    #contact_form fieldset {
+      width: 40rem;
+    }
+    #contact_form legend {
+      font-size: 100%;
+    }
+    #contact_form label{
+      float: left;
+      width: 14rem;
+      text-align: right;
+      margin-right: 10px;
+    }
+    input[type=submit] {
+      margin-left: 13rem;
+      margin-right: 1rem;
+    }
+  }
+  @media screen and (min-width: 1024px){
+    #members_article {
+      display: inline-block;
+      padding-bottom: 10rem;
+    }
+    #fiskare {
+      float: right;
+    }
+    #storm {
+      width: 40%;
+      display: inline-block;
+    }
+    #havet {
+      float: right;
+      margin-top: 2rem;
+    }
+    #eksta_history {
+      display: inline-block;
+    }
+    #trabodar {
+      float: right;
+      margin-bottom: 4rem;
+      margin-left:4rem;
+    }
+    #konrad {
+      float: left;
+      margin-top: 1rem;
+      margin-right: 15%;
+      margin-bottom: 10rem;
+    }
+    #ekstakusten, #skappssattningen, .destinations {
+      display: inline-block;
+      width: 50%;
+    }
+    #strand {
+      float: right;
+      margin-bottom: 4rem;
+    }
+    #skapp {
+      float: left;
+      margin-top: 1rem;
+      margin-right: 4rem;
+      margin-bottom: 5rem;
+    }
+    #natur {
+      margin-left: 25%;
+    }
+
+    #guest_harbor_info{
+      width: 40%;
+    }
+    #timmerstuga {
+      float:right;
+      margin-left: 2rem;
+      margin-top: 4rem;
+      margin-bottom: 2rem;
+    }
+    #bathamn {
+      float: left;
+      position: relative;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+    #news{
+      width: 40%;
+      display: inline-block;
+    }
+  }
+  @media screen and (min-width: 1100px){
+    #trabodar {
+      margin-bottom: 4rem;
+      margin-left:4rem;
+    }
+    #konrad {
+      margin-top: 1rem;
+      margin-right: 2rem;
+    }
+    #news{
+      width: 50%;
+  }
+}
+
+  @media screen and (min-width: 1200px){
+    #contact_form {
+      display: inline-block;
+    }
+  
+    #contact picture {
+      float: right;
+    }
+    #strand {
+      margin-bottom: 4rem;
+      margin-top: 0;
+      margin-right: 0;
+    }
+    #skapp {
+      margin-right: 5rem;
+      margin-top: 1rem;
+    
+    }
+  }
+
+  /*Skriv mall för 2560px också*/

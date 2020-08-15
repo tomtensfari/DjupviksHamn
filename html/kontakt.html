@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Djupvik hamns kontaktformulär</title>
+    <!-- lägg in typsnitt här -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <!--Om js används lägg in: <script src="/js/index.js" type="module"></script>-->
+  </head>
+  
+  <body>
+    <div id="navigation_header">
+      <header>
+        <h1>Kontakt</h1>
+      </header>
+      <a href="/html/english.html" id="english_link">English</a>
+      <div id="navbar_container">
+        <button id="navBtn">Meny</button>
+        <nav>
+              <ul>
+                <li><a href="/index.html">Hem</a></li>
+                <li><a href="turist.html">Turistmål</a></li>
+                <li ><a href="historia.html">Historia</a></li>
+                <li ><a href="medlem.html">Medlemsinfo</a></li>
+                <li id="active"><a href="#">Kontakt</a></li>  
+              </ul>
+            </nav>
+      </div>
+    </div>
+      <!--Kom ihåg att sätta in main-->
+      <section id="contact">
+          <h2>Djupvik kontaktinformation</h2>
+          <article id="contact_info">
+              <h3>Kontaktuppgifter</h3>
+              <p>Hamnfogde Bo Lautin, mobil 0707-920310</p>
+              <p>Djupviks hamnförening<br>
+                c/o Ekholm<br>
+                Eksta Hägur 170<br>
+                623 54 Klintehamn<br>
+                </p>
+          </article>
+          <article id="contact_form">
+              <h3>Kontaktformulär</h3>
+                <form  action="#" method="POST" >
+                    <fieldset>
+                      <legend> Vänligen fyll i formuläret, så hjälper vi dig.</legend>
+                    <p>
+                        <label for="Rubrik_arende">Rubrik för ärendet*:</label>
+                        <input type="text" name="rubrik_arende" id="Rubrik_arende" required>
+                    </p>
+                    <p>
+                        <label for="Namn">Namn*:</label> 
+                        <input type="text" name="namn" id="Namn" required>
+                    </p>
+                    <p>
+                        <label for="Email">E-mail*:</label>
+                        <input type="email" name="email" id="Email" required>
+                    </p>
+                    <p>
+                        <label for="Telefon">Telefon*:</label>
+                        <input type="tel" name="telefon" id="Telefon" required>
+                    </p>
+                    <p>
+                        <label for="Val_kontakt">Hur vill du helst bli kontaktad?</label>
+                        <select name="val_kontakt" id="Val_kontakt">
+                            <option value="val_telefon">Telefon</option>
+                            <option value="val_email">Email</option>
+                            <option value="val_inte_alls">Inte alls</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="Arende_val">Ärendet gäller:</label>
+                        <select name="arende_val" id="Arende_val">
+                            <option value="bat_plats">Båtplats</option>
+                            <option value="medlem">Medlem</option>
+                            <option value="ovrigt">Övrigt</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="Beskrivning_arendet">Beskrivning av ärendet*:</label> 
+                        <textarea name="beskrivning_arendet" id="Beskrivning_arendet" cols="30" rows="5" required></textarea>  
+                    </p>
+                    <p>
+                        <input type="submit" value="Skicka in formuläret">
+                        <input type="reset" value="Rensa formuläret">
+                    </p>
+                </fieldset>
+            </form>
+          </article>
+          
+          <picture>
+            <source srcset="/images/livboj_mellan.jpg" media="(min-width:530px)" /><!--Mellan bilden-->
+            <img src="/images/livboj_liten.jpg" alt="Röd Livboj"/><!--Lilla bilden-->
+          </picture>
+
+      </section>
+      <footer>
+        <p>Copyright 2020 | Djupvikshamn.se | info@djupvikshamn.se</p>
+      </footer>
+  </body>
+</html>
