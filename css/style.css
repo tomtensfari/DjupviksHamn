@@ -34,6 +34,7 @@ html {
     margin:0;
     background-color: rgba(209, 208, 204, 0.8);
     overflow-wrap: break-word;
+    border-radius: 50px 15px;
   }
 
   /*Engelska länken*/
@@ -241,8 +242,6 @@ section a:visited {
     }
   }
   
-
-  
   @media screen and (min-width: 768px){
     /*Navbar*/
     #navBtn {
@@ -316,6 +315,9 @@ section a:visited {
       flex-wrap: wrap;
       justify-content:space-between;
     }
+    .flexcontainer p{
+      line-height: 1.5;
+    }
     .flexcontainer article {
       flex: 1 0 40%;
       margin: 1rem;
@@ -326,7 +328,7 @@ section a:visited {
     }
     /*Index page*/
     #timmerstuga {
-    margin-top:5rem
+      margin-top:5rem
     }
     #guest_harbor_info{
       flex-grow: 3;
@@ -349,10 +351,14 @@ section a:visited {
     }
     #natur{
       margin:3rem 0.5rem;
+      flex-grow: 1;
     }
 
   }
   @media screen and (min-width: 1300px){
+    .flexcontainer p{
+      line-height: 1.5;
+    }
     #guest_harbor_info{
       flex: 35%
     }
