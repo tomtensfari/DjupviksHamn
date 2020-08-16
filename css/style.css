@@ -163,6 +163,11 @@ section a:visited {
 .full_width_header{
   flex: 1 0 100%;
 }
+
+caption{
+  font-weight: bold;
+}
+
   @media screen and (min-width: 320px) and (max-width:767px) {
     header h1 {
       right: 15%;
@@ -225,6 +230,7 @@ section a:visited {
     /*Medlemstabellen*/
     #members ,#members thead, #members tbody, #members th, #members td, #members tr  {
       display: block;
+    
     }
     #members thead tr {
       position: absolute;
@@ -235,6 +241,7 @@ section a:visited {
       border: none;
       position: relative;
       padding-left: 45%;
+      width: 18rem;
     }
     #members td:before {
       position: absolute;
