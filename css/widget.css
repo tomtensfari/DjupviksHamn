@@ -8,11 +8,7 @@
     overflow-wrap: break-word;
     border-radius: 15px 50px;
 }
-#smhi_tabel{
-    border: 3px;
-    border-color: #002E57;
-    /*Kika på detta imorgon*/
-}
+
 #smhi_tabel th {
     color: #002E57;
     background-color: #D6CCB4;

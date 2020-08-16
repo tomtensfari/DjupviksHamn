@@ -6,7 +6,6 @@ export function fetchWeather() {
     })
     //fetch gör om det till ett json objekt, färdigbyggd funktionalitet
     .then(function(response){
-        console.log(response.timeSeries);
         return response.timeSeries;
     });
 }

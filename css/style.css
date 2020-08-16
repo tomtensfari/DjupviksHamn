@@ -52,7 +52,6 @@ html {
     background-color: rgba(0, 46, 87);
   }
   
-  /*Nästan alla element är i en section*/
   section {
     margin: 5%;
   }
@@ -75,6 +74,12 @@ html {
 /*Bilder*/
   picture {
     max-width: 100%;
+}
+.picture_caption{
+  font-weight: bold;
+}
+.flexcontainer #bathamn{
+  margin:1rem;
 }
 
 /*Alla tabeller*/
@@ -139,19 +144,23 @@ input[type=reset]{
 input[type=reset]:hover, input[type=reset]:focus {
   transform: scale(1.10);
 }
-  /* 
-  FÄRGPALETTEN
-    #D6CCB4
-    #2F6A9D
-    #002E57
-    #D1D0CC ändrad till #f8f8f8
-    #00498A*/
+
 section a {
   text-decoration: none;
   color: #2F6A9D;
 }
 section a:visited {
   color: #2F6A9D;
+}
+.flexcontainer{
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content:space-between;
+}
+
+.full_width_header{
+  flex: 1 0 100%;
 }
   @media screen and (min-width: 320px) and (max-width:767px) {
     header h1 {
@@ -321,21 +330,11 @@ section a:visited {
   }
   @media screen and (min-width: 1024px){
    /*Alla sidor*/
-    .flexcontainer{
-      display: flex;
-      flex-flow: row;
-      flex-wrap: wrap;
-      justify-content:space-between;
-    }
     .flexcontainer p{
       line-height: 1.5;
     }
     .flexcontainer article {
       flex: 1 0 40%;
-      margin: 1rem;
-    }
-    .full_width_header{
-      flex: 0 1 100%;
       margin: 1rem;
     }
     /*Index page*/
@@ -467,106 +466,3 @@ section a:visited {
       margin-right: 10%;
     }
 }
-
-    
-    /*#members_article {
-      display: inline-block;
-      padding-bottom: 10rem;
-    }
-    #fiskare {
-      float: right;
-    }
-    #storm {
-      width: 40%;
-      display: inline-block;
-    }
-    #havet {
-      float: right;
-      margin-top: 2rem;
-    }
-    #eksta_history {
-      display: inline-block;
-    }
-    #trabodar {
-      float: right;
-      margin-bottom: 4rem;
-      margin-left:4rem;
-    }
-    #konrad {
-      float: left;
-      margin-top: 1rem;
-      margin-right: 15%;
-      margin-bottom: 10rem;
-    }
-    #ekstakusten, #skappssattningen, .destinations {
-      display: inline-block;
-      width: 50%;
-    }
-    #strand {
-      float: right;
-      margin-bottom: 4rem;
-    }
-    #skapp {
-      float: left;
-      margin-top: 1rem;
-      margin-right: 4rem;
-      margin-bottom: 5rem;
-    }
-    #natur {
-      margin-left: 25%;
-    }
-
-    #guest_harbor_info{
-      width: 40%;
-    }
-    #timmerstuga {
-      float:right;
-      margin-left: 2rem;
-      margin-top: 4rem;
-      margin-bottom: 2rem;
-    }
-    #bathamn {
-      float: left;
-      position: relative;
-      margin-top: 2rem;
-      margin-bottom: 2rem;
-    }
-    #news{
-      width: 40%;
-      display: inline-block;
-    }
-  }
-  @media screen and (min-width: 1100px){
-    #trabodar {
-      margin-bottom: 4rem;
-      margin-left:4rem;
-    }
-    #konrad {
-      margin-top: 1rem;
-      margin-right: 2rem;
-    }
-    #news{
-      width: 50%;
-  }
-}
-
-  @media screen and (min-width: 1200px){
-    #contact_form {
-      display: inline-block;
-    }
-  
-    #contact picture {
-      float: right;
-    }
-    #strand {
-      margin-bottom: 4rem;
-      margin-top: 0;
-      margin-right: 0;
-    }
-    #skapp {
-      margin-right: 5rem;
-      margin-top: 1rem;
-    
-    }
-  }
-*/
