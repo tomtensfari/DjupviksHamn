@@ -269,17 +269,15 @@ section a:visited {
       #navbar_container {
         position: absolute;
         margin:2rem 5%;
-        left: 10%;
-        right: 10%;
-        width: 70%;
-        
+        right: 12%;
+        width: 80%;
     }
       nav {
       display: block;
       overflow: hidden;
       background-color: #002E57;
       opacity: 0.8;
-      border-radius: 50px 15px;
+      border-radius: 40px 15px;
     }
       nav ul {
         display: flex;
@@ -291,7 +289,7 @@ section a:visited {
       nav a {
         text-decoration: none;
         background-color: #002E57;
-        font-size: 120%;
+        font-size: 115%;
         color: #D1D0CC;
         display: block;
         padding: 0.5rem 1rem;
@@ -330,6 +328,13 @@ section a:visited {
     }
   }
   @media screen and (min-width: 1024px){
+    #navbar_container {
+      position: absolute;
+      margin:2rem 5%;
+      left: 10%;
+      right: 10%;
+      width: 70%;
+  }
     h2{
       padding-left:1rem;
     }
@@ -470,3 +475,10 @@ section a:visited {
       margin-right: 10%;
     }
 }
+/* 
+  FÄRGPALETTEN
+    #D6CCB4
+    #2F6A9D
+    #002E57
+    #D1D0CC
+    #f8f8f8*/
