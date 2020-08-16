@@ -394,8 +394,14 @@ section a:visited {
     #contact_info{
       flex:1 0 20%;
     }
-    #livboj{
-      margin-left: 10%;
+    /*Engelska*/
+    #english_page{
+    flex: 2 0 30%;
+    }
+    #beach_houses{
+    align-self: center;
+    flex-grow: 1;
+    margin:1rem;
     }
   }
 
